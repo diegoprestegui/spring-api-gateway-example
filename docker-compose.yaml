@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  gateway:
+    build: ./gateway
+    ports:
+      - '8080:8080'
+  service-a:
+    build: ./service-a
+  service-b:
+    build: ./service-b
+  service-c:
+    build: ./service-c
